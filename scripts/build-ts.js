@@ -4,6 +4,7 @@ const path = require('path');
 const possibleTscPaths = [
     path.resolve('./node_modules/typescript/bin/tsc'),// Path for plugin node_modules.
     path.resolve('./../../node_modules/typescript/bin/tsc'),// Path for project node_modules.
+    path.resolve('./../../../node_modules/typescript/bin/tsc'), // Workaround for broken build of Barcode plugin
 ];
 
 const findAndRunTsc = () => {
